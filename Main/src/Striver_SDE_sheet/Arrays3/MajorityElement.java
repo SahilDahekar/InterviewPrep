@@ -2,6 +2,11 @@ package Arrays3;
 
 public class MajorityElement {
 
+    // Brute Force uses two for loops
+
+    // Better Approach uses HashMaps to count frequency
+
+    // Optimized Approach using Moore Voting Algorithm
     public static int majorityElement(int[] nums) {
         int el = 0;
         int cnt = 0;

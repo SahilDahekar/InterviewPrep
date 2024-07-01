@@ -46,10 +46,6 @@ public class CountInversions {
         cnt += merge(arr, low, mid, high);
         return cnt;
     }
-    public static long getInversions(long arr[], int n) {
-        // Write your code here.
-        return mergeSort(arr, 0, n-1);
-    }
 
     public static void main(String[] args) {
         long[] arr = new long[]{2,5,1,3,4};
