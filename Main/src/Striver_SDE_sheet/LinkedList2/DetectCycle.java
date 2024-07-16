@@ -26,9 +26,10 @@ public class DetectCycle {
     }
     public static void main(String[] args) {
         ListNode list = new ListNode(4);
-        ListNode head1 = list;
+        ListNode head = list;
         list.next = new ListNode(1);
         list = list.next;
+        ListNode start = list;
         list.next = new ListNode(3);
         list = list.next;
         list.next = new ListNode(5);
@@ -37,8 +38,8 @@ public class DetectCycle {
         list = list.next;
         list.next = new ListNode(6);
         list = list.next;
-        list.next = head1;
+        list.next = start;
 
-        System.out.println(hasCycle(head1));
+        System.out.println(hasCycle(head));
     }
 }
